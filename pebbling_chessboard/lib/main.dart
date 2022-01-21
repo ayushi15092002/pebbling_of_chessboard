@@ -29,7 +29,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  ChessBoardController controller = ChessBoardController();
+  final haveClone = List.generate(64, (index) => 0);
+
+  @override
+  void initState() {
+    haveClone[56] = 1;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,111 +44,63 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: SizedBox(
-          width: 400,
-          height:400,
-          child: Stack(
-            children: [
-              AspectRatio(
-                child: Image.asset(
-                  "images/orange_board.png",
-                  package: 'flutter_chess_board',
-                  fit: BoxFit.cover,
-                ),
-                aspectRatio: 1.0,
+          child: SizedBox(
+        width: 400,
+        height: 400,
+        child: Stack(
+          children: [
+            AspectRatio(
+              child: Image.asset(
+                "images/orange_board.png",
+                package: 'flutter_chess_board',
+                fit: BoxFit.cover,
               ),
-              AspectRatio(
-                aspectRatio: 1.0,
-                child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 8),
-                  itemBuilder: (context, index) {
-                    var row = index ~/ 8;
-                    var column = index % 8;
-                    var boardRank = '${(7 - row) + 1}';
-                    var boardFile = '${files[column]}';
-                    return index == 56 
-                    ? Container(
-                      child: Padding(
-                        padding: EdgeInsets.all(4.0),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.red[800],
-                        ),
-                      )
-                    )
-                        : Container();
+              aspectRatio: 1.0,
+            ),
+            AspectRatio(
+              aspectRatio: 1.0,
+              child: getClone(),
+            ),
+          ],
+        ),
+      )),
+    );
+  }
 
-                    // var squareName = '$boardFile$boardRank';
-                    // var pieceOnSquare = game.get(squareName);
-
-                    // var piece = BoardPiece(
-                    //   squareName: squareName,
-                    //   game: game,
-                    // );
-
-                    // var draggable = game.get(squareName) != null
-                    //     ? Draggable<PieceMoveData>(
-                    //   child: piece,
-                    //   feedback: piece,
-                    //   childWhenDragging: SizedBox(),
-                    //   data: PieceMoveData(
-                    //     squareName: squareName,
-                    //     pieceType:
-                    //     pieceOnSquare?.type.toUpperCase() ?? 'P',
-                    //     pieceColor: pieceOnSquare?.color ?? Color.WHITE,
-                    //   ),
-                    // )
-                    //     : Container();
-
-                    // var dragTarget =
-                    // DragTarget<PieceMoveData>(builder: (context, list, _) {
-                    //   return draggable;
-                    // }, onWillAccept: (pieceMoveData) {
-                    //   return widget.enableUserMoves ? true : false;
-                    // }, onAccept: (PieceMoveData pieceMoveData) async {
-                    //   // A way to check if move occurred.
-                    //   Color moveColor = game.turn;
-                    //
-                    //   if (pieceMoveData.pieceType == "P" &&
-                    //       ((pieceMoveData.squareName[1] == "7" &&
-                    //           squareName[1] == "8" &&
-                    //           pieceMoveData.pieceColor == Color.WHITE) ||
-                    //           (pieceMoveData.squareName[1] == "2" &&
-                    //               squareName[1] == "1" &&
-                    //               pieceMoveData.pieceColor == Color.BLACK))) {
-                    //     var val = await _promotionDialog(context);
-                    //
-                    //     if (val != null) {
-                    //       widget.controller.makeMoveWithPromotion(
-                    //         from: pieceMoveData.squareName,
-                    //         to: squareName,
-                    //         pieceToPromoteTo: val,
-                    //       );
-                    //     } else {
-                    //       return;
-                    //     }
-                    //   } else {
-                    //     widget.controller.makeMove(
-                    //       from: pieceMoveData.squareName,
-                    //       to: squareName,
-                    //     );
-                    //   }
-                    //   if (game.turn != moveColor) {
-                    //     widget.onMove?.call();
-                    //   }
-                    // });
-
-                    // return dragTarget;
-                  },
-                  itemCount: 64,
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+  Widget getClone() {
+    print("getclone called");
+    return GridView.builder(
+      gridDelegate:
+          const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 8),
+      itemBuilder: (context, index) {
+        var row = index ~/ 8;
+        var column = index % 8;
+        if (haveClone[index] == 1) {
+          return Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: GestureDetector(
+                child: CircleAvatar(
+                  backgroundColor: Colors.red[800],
                 ),
-              ),
-            ],
-          ),
-        )
-      ),
+                onTap: () {
+                  if (haveClone[index -8] == 0 && haveClone[index+1] == 0) {
+                    setState(() {
+                      print("upward index : ${index - 8} ");
+                      print("right index : ${index + 1}");
+                      haveClone[index - 8] = 1;
+                      haveClone[index + 1] = 1;
+                      getClone();
+                    });
+                  }
+                }),
+          );
+        } else {
+          return Container();
+        }
+      },
+      itemCount: 64,
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
     );
   }
 }
