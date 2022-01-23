@@ -34,6 +34,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     haveClone[56] = 1;
+    haveClone[57] = 1;
+    haveClone[48] = 1;
     super.initState();
   }
 
@@ -57,10 +59,58 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               aspectRatio: 1.0,
             ),
+            Positioned(
+                left: 0,
+                top: 299,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 50.0,
+                      width: 50.0,
+                      decoration: const BoxDecoration(
+                        border:  Border(
+                          left: BorderSide(color: Colors.black, width: 4.0),
+                          right:  BorderSide(color: Colors.black, width: 4.0),
+                          top: BorderSide(color: Colors.black, width: 4.0),
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 50.0,
+                          width: 50.0,
+                          decoration: const BoxDecoration(
+                            border:  Border(
+                              left: BorderSide(color: Colors.black, width: 4.0),
+                              bottom:  BorderSide(color: Colors.black, width: 4.0),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 50.0,
+                          width: 50.0,
+                          decoration: const BoxDecoration(
+                            border:  Border(
+                              right: BorderSide(color: Colors.black, width: 4.0),
+                              bottom:  BorderSide(color: Colors.black, width: 4.0),
+                              top: BorderSide(color: Colors.black, width: 4.0),
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                )
+            ),
             AspectRatio(
               aspectRatio: 1.0,
               child: getClone(),
             ),
+
+
           ],
         ),
       )),
@@ -75,32 +125,105 @@ class _MyHomePageState extends State<MyHomePage> {
       itemBuilder: (context, index) {
         var row = index ~/ 8;
         var column = index % 8;
-        if (haveClone[index] == 1) {
-          return Padding(
-            padding: const EdgeInsets.all(4.0),
-            child: GestureDetector(
-                child: CircleAvatar(
-                  backgroundColor: Colors.red[800],
-                ),
-                onTap: () {
-                  if (haveClone[index -8] == 0 && haveClone[index+1] == 0) {
-                    setState(() {
-                      print("upward index : ${index - 8} ");
-                      print("right index : ${index + 1}");
-                      haveClone[index - 8] = 1;
-                      haveClone[index + 1] = 1;
-                      getClone();
-                    });
-                  }
-                }),
-          );
-        } else {
+        // if((index == 56 && haveClone[index] == 1)){
+        //   return Container(
+        //     decoration: const BoxDecoration(
+        //         border:  Border(
+        //           left: BorderSide(color: Colors.black, width: 4.0),
+        //           bottom:  BorderSide(color: Colors.black, width: 4.0),
+        //         ),
+        //     ),
+        //     child: getCloneWithCircularAvatar(index),
+        //   );
+        // }
+        // else if((index == 57 && haveClone[index] == 1)){
+        //   return Container(
+        //     decoration: const BoxDecoration(
+        //       border: Border(
+        //         right: BorderSide(color: Colors.black, width: 4.0),
+        //         bottom: BorderSide(color: Colors.black, width: 4.0),
+        //         top: BorderSide(color: Colors.black, width: 4.0),
+        //       ),
+        //     ),
+        //     child: getCloneWithCircularAvatar(index),
+        //   );
+        // }
+        // else if((index == 48 && haveClone[index] == 1)){
+        //   return Container(
+        //     decoration: const BoxDecoration(
+        //       border:  Border(
+        //         right: BorderSide(color: Colors.black, width: 4.0),
+        //         left: BorderSide(color: Colors.black, width: 4.0),
+        //         top: BorderSide(color: Colors.black, width: 4.0),
+        //       ),
+        //     ),
+        //     child: getCloneWithCircularAvatar(index),
+        //   );
+        // }
+        // else if((index == 56 && haveClone[index] == 0)){
+        //   return Container(
+        //     decoration: const BoxDecoration(
+        //       border:  Border(
+        //         left: BorderSide(color: Colors.black, width: 4.0),
+        //         bottom: BorderSide(color: Colors.black, width: 4.0),
+        //       ),
+        //     ),
+        //   );
+        // }
+        // else if((index == 57 && haveClone[index] == 0)){
+        //   return Container(
+        //     decoration: const BoxDecoration(
+        //       border: Border(
+        //         left: BorderSide(color: Colors.black, width: 4.0),
+        //         bottom: BorderSide(color: Colors.black, width: 4.0),
+        //       ),
+        //     ),
+        //   );
+        // }
+        // else if((index == 48 && haveClone[index] == 0)){
+        //   return Container(
+        //     decoration: const BoxDecoration(
+        //       border: Border(
+        //         left: BorderSide(color: Colors.black, width: 4.0),
+        //         bottom: BorderSide(color: Colors.black, width: 4.0),
+        //       ),
+        //     ),
+        //   );
+        // }
+        // else
+          if (haveClone[index] == 1) {
+          return  getCloneWithCircularAvatar(index);
+        }
+        else {
           return Container();
         }
       },
       itemCount: 64,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
+    );
+  }
+  Widget getCloneWithCircularAvatar(int index){
+    return Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: GestureDetector(
+          child: CircleAvatar(
+            backgroundColor: Colors.red[800],
+          ),
+          onTap: () {
+            if (haveClone[index -8] == 0 && haveClone[index+1] == 0) {
+              setState(() {
+                if((index+1)%8 != 0 ){
+                  print("Current index : ${index}");
+                  print("upward index : ${index - 8} ");
+                  print("right index : ${index + 1}");
+                  haveClone[index] = 0;
+                  haveClone[index - 8] = 1;
+                  haveClone[index + 1] = 1;
+                }
+              });
+            }
+          }),
     );
   }
 }
