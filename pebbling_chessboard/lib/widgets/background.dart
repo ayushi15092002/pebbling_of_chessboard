@@ -1,12 +1,16 @@
 import 'package:flutter/cupertino.dart';
+var size,height,width;
 
 class BackgroundWidget extends StatelessWidget{
-  final double height;
-  final double width;
+
   final Widget child;
-  const BackgroundWidget({Key? key, required this.height, required this.width, required this.child}) : super(key: key);
+  const BackgroundWidget({Key? key,required this.child}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    size = MediaQuery.of(context).size;
+    height = size.height;
+    width = size.width;
+
     return Container(
       height: height,
       width: width,

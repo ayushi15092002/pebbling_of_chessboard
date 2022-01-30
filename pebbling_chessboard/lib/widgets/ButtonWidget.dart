@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
 var size,height,width;
 class ButtonWidget extends StatelessWidget{
   final String title;
-  final Function onPressed;
+  final VoidCallback  onPressed;
   const ButtonWidget({Key? key, required this.title, required this.onPressed, }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -31,11 +31,12 @@ class ButtonWidget extends StatelessWidget{
             title,
             style: TextStyle(
               fontSize: width*0.1,
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w300,
               color: Colors.black,
             ),
           ),
-          onPressed: onPressed(),
+          onPressed: onPressed
+
         ),
       ),
     );
