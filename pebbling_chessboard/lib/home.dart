@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:pebbling_chessboard/select_level_screen.dart';
 import 'package:pebbling_chessboard/widgets/ButtonWidget.dart';
 import 'package:pebbling_chessboard/widgets/TextWidget.dart';
 import 'package:pebbling_chessboard/widgets/background.dart';
 
 import 'choose_prison.dart';
+import 'game.dart';
+import 'main.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -14,27 +18,33 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setPreferredOrientations([
+    //   DeviceOrientation.landscapeLeft,
+    //   DeviceOrientation.landscapeRight,
+    // ]);
     size = MediaQuery.of(context).size;
     height = size.height;
     width = size.width;
     return Scaffold(
-      body: BackgroundWidget(
-        child: Column(
-          children: [
-            SizedBox(height: height*0.08,),
-            getLogo(),
-            SizedBox(height: height*0.03),
-            ButtonWidget(title: 'Play',onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ChoosePrisonScreen()),
-              );
-            },
-              ),
-            SizedBox(height: height*0.03),
-            ButtonWidget(title: 'Help',onPressed: (){},)
-
-          ],
+      body: SizedBox(
+        height: height, width: width,
+        child: BackgroundWidget(
+          child: Column(
+            children: [
+              SizedBox(height: height*0.08,),
+              getLogo(),
+              SizedBox(height: height*0.03),
+              ButtonWidget(title: 'Play',onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SelectLevelScreen()),
+                );
+              },
+                ),
+              SizedBox(height: height*0.03),
+              ButtonWidget(title: 'Help',onPressed: (){},)
+            ],
+          ),
         ),
       ),
     );

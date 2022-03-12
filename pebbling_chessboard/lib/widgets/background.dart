@@ -12,8 +12,8 @@ class BackgroundWidget extends StatelessWidget{
     width = size.width;
 
     return Container(
-      height: height,
-      width: width,
+      // height: height,
+      // width: width,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
