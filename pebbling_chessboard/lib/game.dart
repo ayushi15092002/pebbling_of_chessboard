@@ -77,7 +77,7 @@ class _GamePageState extends State<GamePage> {
                               aspectRatio: 1.0,
                             ),
                             Positioned(
-                              left: widget.level>10 ?MediaQuery.of(context).size.width*0.39 :0,
+                              left: widget.level>10 ?MediaQuery.of(context).size.width*0.457 :0,
                               bottom: 0,
                               child: Prison().getPrison(widget.level),
                             ),
@@ -295,7 +295,7 @@ class _GamePageState extends State<GamePage> {
     haveClone[48] = 1;
   }
   void level11clone(){
-    haveClone[111] = 1;
+    haveClone[112] = 1;
   }
   void getCloneByLevel(int level) {
     switch (level) {

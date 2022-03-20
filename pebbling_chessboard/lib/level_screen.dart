@@ -19,14 +19,14 @@ class LevelScreenState extends State<LevelScreen> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/background.jpeg"),
             fit: BoxFit.cover,
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(10.0),
           child: Stack(
             children: [
               Center(
@@ -35,10 +35,10 @@ class LevelScreenState extends State<LevelScreen> {
                   height: MediaQuery.of(context).size.height*0.75,
                   decoration: BoxDecoration(
                       borderRadius:  BorderRadius.all(Radius.elliptical(MediaQuery.of(context).size.width*0.75, MediaQuery.of(context).size.height*0.75)),
-                    boxShadow: [
+                    boxShadow: const [
                   BoxShadow(
                   color: Color(0xffFFA51E),
-                    offset: const Offset(
+                    offset: Offset(
                       5.0,
                       5.0,
                     ),
@@ -52,12 +52,12 @@ class LevelScreenState extends State<LevelScreen> {
                 child: Container(
                   width: MediaQuery.of(context).size.width*0.65,
                   height: MediaQuery.of(context).size.height*0.65,
-                    decoration: BoxDecoration(
-                      borderRadius:  BorderRadius.all(Radius.circular(20.0)),
+                    decoration: const BoxDecoration(
+                      borderRadius:  BorderRadius.all( Radius.circular(20.0)),
                       boxShadow: [
                         BoxShadow(
-                          color: Color(0xff2F1F4A),
-                          offset: const Offset(
+                          color:  Color(0xff2F1F4A),
+                          offset: Offset(
                             5.0,
                             5.0,
                           ),
@@ -78,7 +78,7 @@ class LevelScreenState extends State<LevelScreen> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left:80,right: 80 ),
-                      child: textWidget( "Level ${widget.level}",  Colors.black, Color(0xffFFA51E),
+                      child: textWidget( "Level ${widget.level}",  Colors.black, const Color(0xffFFA51E),
                           MediaQuery.of(context).size.width * 0.09, 17, "Rye"),
                     ),
                     SizedBox(
@@ -90,15 +90,15 @@ class LevelScreenState extends State<LevelScreen> {
                           // SizedBox(
                           //   width: MediaQuery.of(context).size.width*0.02,
                           // ),
-                          Icon(Icons.star_border, size: MediaQuery.of(context).size.width*0.12,color:  Color(0xffFFA51E),),
+                          Icon(Icons.star_border, size: MediaQuery.of(context).size.width*0.12,color:  const Color(0xffFFA51E),),
                           SizedBox(
                             width: MediaQuery.of(context).size.width*0.05,
                           ),
-                          Icon(Icons.star_border, size: MediaQuery.of(context).size.width*0.12,color:  Color(0xffFFA51E),),
+                          Icon(Icons.star_border, size: MediaQuery.of(context).size.width*0.12,color:  const Color(0xffFFA51E),),
                           SizedBox(
                             width: MediaQuery.of(context).size.width*0.05,
                           ),
-                          Icon(Icons.star_border, size: MediaQuery.of(context).size.width*0.12,color:  Color(0xffFFA51E),),
+                          Icon(Icons.star_border, size: MediaQuery.of(context).size.width*0.12,color:  const Color(0xffFFA51E),),
                         ],
                       ),
                     ),
@@ -110,7 +110,7 @@ class LevelScreenState extends State<LevelScreen> {
                       height:  MediaQuery.of(context).size.height*0.06,
                       child: ElevatedButton.icon(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xffFFA51E)),
+                          backgroundColor: MaterialStateProperty.all<Color>(const Color(0xffFFA51E)),
                           elevation: MaterialStateProperty.all<double>(10.0),
                           shape:  MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(
@@ -124,13 +124,13 @@ class LevelScreenState extends State<LevelScreen> {
                             MaterialPageRoute(builder: (context) => GamePage(level: widget.level,)),
                           );
                         },
-                        label: Text("PLAY",
-                          style: TextStyle(
+                        label: const Text("PLAY",
+                          style:  TextStyle(
                             color: Colors.black,
                             fontSize: 30.0
                           ),
                         ),
-                        icon: Icon(Icons.play_circle_filled,color: Colors.black,size: 30.0,),
+                        icon: const Icon(Icons.play_circle_filled,color: Colors.black,size: 30.0,),
                       ),
                     ),
                     SizedBox(
@@ -148,7 +148,7 @@ class LevelScreenState extends State<LevelScreen> {
                             // color: Color(0xffC4C4C4),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10.0),
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   offset: Offset(0, 0),
                                   blurRadius: 2,
@@ -173,7 +173,7 @@ class LevelScreenState extends State<LevelScreen> {
                           // color: Color(0xffC4C4C4),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10.0),
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 offset: Offset(0, 0),
                                 blurRadius: 2,
@@ -197,8 +197,8 @@ class LevelScreenState extends State<LevelScreen> {
                           // color: Color(0xffC4C4C4),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.0),
-                            boxShadow: [
-                              BoxShadow(
+                            boxShadow: const [
+                               BoxShadow(
                                 offset: Offset(0, 0),
                                 blurRadius: 2,
                                 spreadRadius: 2,
