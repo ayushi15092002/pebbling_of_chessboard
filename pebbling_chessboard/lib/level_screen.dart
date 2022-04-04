@@ -70,14 +70,14 @@ class LevelScreenState extends State<LevelScreen> {
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height*0.17,
-                left: MediaQuery.of(context).size.width*0.15,
+                left: MediaQuery.of(context).size.width/2 -MediaQuery.of(context).size.width*0.42 /*MediaQuery.of(context).size.width*0.15*/,
                 child: Column(
                   children: [
                     SizedBox(
                       height: MediaQuery.of(context).size.width*0.1,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left:80,right: 80 ),
+                      padding: const EdgeInsets.only(left:80, right: 80),
                       child: textWidget( "Level ${widget.level}",  Colors.black, const Color(0xffFFA51E),
                           MediaQuery.of(context).size.width * 0.09, 17, "Rye"),
                     ),

@@ -52,7 +52,7 @@ class _GamePageState extends State<GamePage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: widget.level>10 ? height*0.075 : height*0.15,
+                    height: widget.level>10 ? height*0.005 : height*0.12,
                   ),
                   SizedBox(
                       width: widget.level > 10 ? 900 :400,
@@ -77,7 +77,13 @@ class _GamePageState extends State<GamePage> {
                               aspectRatio: 1.0,
                             ),
                             Positioned(
-                              left: widget.level>10 ?MediaQuery.of(context).size.width*0.457 :0,
+                              left: widget.level>10
+                                  ? cagePosition(widget.level) ==0
+                                    ? MediaQuery.of(context).size.width*0.457
+                                    : cagePosition(widget.level) ==1
+                                  ? MediaQuery.of(context).size.width*0.39
+                              : MediaQuery.of(context).size.width*0.33
+                                  :0,
                               bottom: 0,
                               child: Prison().getPrison(widget.level),
                             ),
@@ -85,54 +91,58 @@ class _GamePageState extends State<GamePage> {
                               aspectRatio: 1.0,
                                   child: getClone(),
                             ),
-
                           ],
                         ),
                       )),
                   SizedBox(
-                    height: widget.level> 10 ? MediaQuery.of(context).size.height*0.015 : MediaQuery.of(context).size.height*0.2,
+                      // height: widget.level> 10 ? MediaQuery.of(context).size.height*0.015 : MediaQuery.of(context).size.height*0.2
+                    height: widget.level> 10 ? 0 : MediaQuery.of(context).size.height*0.07,
                   ),
                   if(widget.level>10)
                     Column(
                       children: [
-                        RawMaterialButton(
-                          onPressed: () {
-                            print("position >> $position");
-                            setState(() {
-                              if(position ==1){
-                                position =2;
-                              }
-                              else{
-                                position =1;
-                              }
-                            });
-                          },
-                          elevation: 2.0,
-                          fillColor: Colors.white,
-                          child: position ==1
-                              ? Icon(
-                            Icons.arrow_right ,
-                            size: 50.0,
-                          )
-                          : Icon(
-                            Icons.arrow_left ,
-                            size: 50.0,
+                        SizedBox(
+                          height: 50,
+                          width: 50,
+                          child: RawMaterialButton(
+                            padding: EdgeInsets.zero,
+                            onPressed: () {
+                              print("position >> $position");
+                              setState(() {
+                                if(position ==1){
+                                  position =2;
+                                }
+                                else{
+                                  position =1;
+                                }
+                              });
+                            },
+                            elevation: 2.0,
+                            fillColor: Colors.white,
+                            child: position ==1
+                                ? Icon(
+                              Icons.arrow_right ,
+                              size: 30.0,
+                            )
+                            : Icon(
+                              Icons.arrow_left ,
+                              size: 30.0,
+                            ),
+                            // padding: EdgeInsets.all(1.0),
+                            shape: const CircleBorder(),
                           ),
-                          padding: EdgeInsets.all(15.0),
-                          shape: CircleBorder(),
                         ),
                         SizedBox(
-                          height: MediaQuery.of(context).size.height*0.05,
+                          height: MediaQuery.of(context).size.height*0.03,
                         )
                       ],
                     ),
                   Container(
                     height: MediaQuery.of(context).size.width*0.2,
                     width: MediaQuery.of(context).size.width*0.5,
-                    // color: Color(0xffC4C4C4),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           offset: Offset(0, 0),
                           blurRadius: 2,
@@ -144,17 +154,21 @@ class _GamePageState extends State<GamePage> {
                     child: Column(
                       children: [
                         textWidget( "Moves",  Colors.black, Colors.black,
-                            MediaQuery.of(context).size.width * 0.09, 1, "Sans Francisco"),
+                        MediaQuery.of(context).size.width * 0.09, 1, "Sans Francisco"),
+                            // MediaQuery.of(context).size.width * 0.08, 1, "Sans Francisco"),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
                                 Icons.sync_alt,
-                                size: MediaQuery.of(context).size.width*0.08,
+                                // size: MediaQuery.of(context).size.width*0.08,
+                                size: MediaQuery.of(context).size.width*0.07,
                                 color:  Colors.black
                             ),
                             textWidget( moves.toString(),  Colors.black, Colors.black,
-                                MediaQuery.of(context).size.width * 0.09, 1, "Sans Francisco"),
+                                // MediaQuery.of(context).size.width * 0.09, 1, "Sans Francisco",
+                                MediaQuery.of(context).size.width * 0.08, 1, "Sans Francisco"
+                            ),
                           ],
                         )
                       ],
@@ -169,39 +183,37 @@ class _GamePageState extends State<GamePage> {
 
   Widget getClone() {
     // print("getclone called");
-    return Padding(
-      padding: EdgeInsets.only(bottom: 8.0),
-      child: Container(
-        // decoration: BoxDecoration(
-        //   border: Border.all(color:Colors.white)
-        // ),
-        child: GridView.builder(
-          gridDelegate:
-          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: widget.level>10 ? 15: 8,childAspectRatio: widget.level>10 ?  0.535 : 1),
-          // padding: EdgeInsets.only(bottom: 0.1),
-          itemBuilder: (context, index) {
-              return Container(
-                // height: 0,
-                // width: 0,
-                // color: index%2==0 ? Color(0xffFA5D04) : Color(0xffFFD37D),
-                // decoration: BoxDecoration(
-                //   border:Border.all(color: Colors.black)
-                // ),
-                  child: haveClone[index] == 1
-                    ? getCloneWithCircularAvatar(index)
-                      : null,
-              );
-          },
-          itemCount: widget.level>10 ?120: 64,
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-        ),
+    /// removed padding widget
+    return Container(
+      // decoration: BoxDecoration(
+      //   border: Border.all(color:Colors.white)
+      // ),
+      child: GridView.builder(
+        gridDelegate:
+        SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: widget.level>10 ? 15: 8,childAspectRatio: widget.level>10 ?  0.535 : 1),
+        // padding: EdgeInsets.only(bottom: 0.1),
+        itemBuilder: (context, index) {
+            return Container(
+              // height: 0,
+              // width: 0,
+              // color: index%2==0 ? Color(0xffFA5D04) : Color(0xffFFD37D),
+              // decoration: BoxDecoration(
+              //   border:Border.all(color: Colors.black)
+              // ),
+                child: haveClone[index] == 1
+                  ? getCloneWithCircularAvatar(index)
+                    : null,
+            );
+        },
+        itemCount: widget.level>10 ?120: 64,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
       ),
     );
   }
   Widget getCloneWithCircularAvatar(int index){
-    print("getCloneWithCircularAvatar calling");
-    print(haveClone);
+    // print("getCloneWithCircularAvatar calling");
+    // print(haveClone);
     return Padding(
       padding: EdgeInsets.all(widget.level>10 ? 2.0 : 7.0),
       child: GestureDetector(
@@ -210,7 +222,7 @@ class _GamePageState extends State<GamePage> {
           ),
           onTap: () {
             if(widget.level<=10){
-              print("less than level 10");
+              // print("less than level 10");
               if (haveClone[index -8] == 0 && haveClone[index+1] == 0) {
                 setState(() {
                   if((index+1)%8 != 0 && checkWinOrNot(widget.level) == false){
@@ -228,23 +240,23 @@ class _GamePageState extends State<GamePage> {
               }
             }
             else{
-              print("greater than 10");
+              // print("greater than 10");
               if(position ==1){
-                print("position $position");
+                // print("position $position");
                 if (haveClone[index -15] == 0 && haveClone[index+1] == 0) {
-                  print("setting value");
+                  // print("setting value");
                   setState(() {
-                    print("setState called");
-                    if((index+1)%15 != 0 ){
-                      print("value set");
+                    // print("setState called");
+                    if((index+1)%15 != 0  && checkWinOrNot(widget.level) == false){
+                      // print("value set");
                       moves--;
-                      print("Current index : ${index}");
-                      print("upward index : ${index - 8} ");
-                      print("right index : ${index + 1}");
+                      // print("Current index : ${index}");
+                      // print("upward index : ${index - 8} ");
+                      // print("right index : ${index + 1}");
                       haveClone[index] = 0;
                       haveClone[index - 15] = 1;
                       haveClone[index + 1] = 1;
-                      // checkWinOrNot(widget.level);
+                      checkWinOrNot(widget.level);
                       // print( checkWinOrNot(widget.level));
                     }
                   });
@@ -252,11 +264,11 @@ class _GamePageState extends State<GamePage> {
               }
               else{
                 if (haveClone[index -15] == 0 && haveClone[index-1] == 0) {
-                  print("setting value");
+                  // print("setting value");
                   setState(() {
-                    print("setState called");
+                    // print("setState called");
                     if((index+1)%15 != 0 ){
-                      print("value set");
+                      // print("value set");
                       moves--;
                       // print("Current index : ${index}");
                       // print("upward index : ${index - 8} ");
@@ -270,16 +282,24 @@ class _GamePageState extends State<GamePage> {
                   });
                 }
               }
-
             }
-
-          }),
+          }
+          ),
     );
   }
 
-
+  int cagePosition(int level){
+    if(level >= 15 ){
+      if(level == 25 || level ==26 || level ==29 || level == 30 || level == 31){
+        return 2;
+      }
+      return 1;
+    }
+    else
+    return 0;
+  }
   void getOneClone(){
-    print("get One Clone called");
+    // print("get One Clone called");
     haveClone[56] =1;
   }
   void getTwoCloneHor(){
@@ -294,9 +314,13 @@ class _GamePageState extends State<GamePage> {
     haveClone[57] = 1;
     haveClone[48] = 1;
   }
-  void level11clone(){
+  void getOneCloneG10(){
     haveClone[112] = 1;
   }
+  // void level12Clone(){
+  //   haveClone[112] = 1;
+  //   haveClone[113] = 1;
+  // }
   void getCloneByLevel(int level) {
     switch (level) {
       case 1:
@@ -320,7 +344,27 @@ class _GamePageState extends State<GamePage> {
       case 10:
         return getTwoCloneVer();
       case 11:
-        return level11clone();
+      case 12:
+      case 13:
+      case 14:
+      case 15:
+      case 16:
+      case 17:
+      case 18:
+      case 19:
+      case 20:
+      case 21:
+      case 22:
+      case 23:
+      case 24:
+      case 25:
+      case 26:
+      case 27:
+      case 28:
+      case 29:
+      case 30:
+      case 31:
+        return getOneCloneG10();
     }
   }
 
@@ -368,6 +412,30 @@ class _GamePageState extends State<GamePage> {
     }
     return false;
   }
+  bool level11Cage(){
+    if(haveClone[112] == 0 ){
+      return true;
+    }
+    return false;
+  }
+  bool level12Cage(){
+    if(haveClone[112] == 0 && haveClone[113] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level13Cage(){
+    if(haveClone[112] == 0 && haveClone[97] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level14Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0){
+      return true;
+    }
+    return false;
+  }
     bool checkWinOrNot(int level){
       switch(level){
         case 1:
@@ -390,6 +458,14 @@ class _GamePageState extends State<GamePage> {
           return threeCage();
         case 10:
           return fiveCage();
+        case 11:
+          return level11Cage();
+        case 12:
+          return level12Cage();
+        case 13:
+          return level13Cage();
+        case 14:
+          return level14Cage();
         default:
           return oneCage();
       }
