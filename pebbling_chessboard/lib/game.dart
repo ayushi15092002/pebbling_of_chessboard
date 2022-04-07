@@ -81,9 +81,11 @@ class _GamePageState extends State<GamePage> {
                                   ? cagePosition(widget.level) ==0
                                     ? MediaQuery.of(context).size.width*0.457
                                     : cagePosition(widget.level) ==1
-                                  ? MediaQuery.of(context).size.width*0.39
-                              : MediaQuery.of(context).size.width*0.33
-                                  :0,
+                                      ? MediaQuery.of(context).size.width*0.39
+                                      : cagePosition(widget.level) ==2
+                                        ? MediaQuery.of(context).size.width*0.33
+                                        :MediaQuery.of(context).size.width*0.26
+                                    :0,
                               bottom: 0,
                               child: Prison().getPrison(widget.level),
                             ),
@@ -212,8 +214,8 @@ class _GamePageState extends State<GamePage> {
     );
   }
   Widget getCloneWithCircularAvatar(int index){
-    // print("getCloneWithCircularAvatar calling");
-    // print(haveClone);
+    print("getCloneWithCircularAvatar calling");
+    print(haveClone);
     return Padding(
       padding: EdgeInsets.all(widget.level>10 ? 2.0 : 7.0),
       child: GestureDetector(
@@ -240,24 +242,26 @@ class _GamePageState extends State<GamePage> {
               }
             }
             else{
-              // print("greater than 10");
+              print("greater than 10");
               if(position ==1){
-                // print("position $position");
+                print("position $position");
                 if (haveClone[index -15] == 0 && haveClone[index+1] == 0) {
-                  // print("setting value");
+                  print("setting value");
                   setState(() {
-                    // print("setState called");
+                    print("setState called");
+                    print("checkWinOrNot");
+                    print(checkWinOrNot(widget.level));
                     if((index+1)%15 != 0  && checkWinOrNot(widget.level) == false){
-                      // print("value set");
+                      print("value set");
                       moves--;
-                      // print("Current index : ${index}");
-                      // print("upward index : ${index - 8} ");
-                      // print("right index : ${index + 1}");
+                      print("Current index : ${index}");
+                      print("upward index : ${index - 8} ");
+                      print("right index : ${index + 1}");
                       haveClone[index] = 0;
                       haveClone[index - 15] = 1;
                       haveClone[index + 1] = 1;
                       checkWinOrNot(widget.level);
-                      // print( checkWinOrNot(widget.level));
+                      print( checkWinOrNot(widget.level));
                     }
                   });
                 }
@@ -267,7 +271,7 @@ class _GamePageState extends State<GamePage> {
                   // print("setting value");
                   setState(() {
                     // print("setState called");
-                    if((index+1)%15 != 0 ){
+                    if((index+1)%15 != 0 && checkWinOrNot(widget.level) == false){
                       // print("value set");
                       moves--;
                       // print("Current index : ${index}");
@@ -290,7 +294,10 @@ class _GamePageState extends State<GamePage> {
 
   int cagePosition(int level){
     if(level >= 15 ){
-      if(level == 25 || level ==26 || level ==29 || level == 30 || level == 31){
+      if(level == 25 || level ==26 || level ==29 || level == 30 || level == 31 || level >= 33){
+        if(level == 42 || level == 59 || level == 62){
+          return 3;
+        }
         return 2;
       }
       return 1;
@@ -364,6 +371,124 @@ class _GamePageState extends State<GamePage> {
       case 29:
       case 30:
       case 31:
+      case 32:
+      case 33:
+      case 34:
+      case 35:
+      case 36:
+      case 37:
+      case 38:
+      case 39:
+      case 40:
+      case 41:
+      case 42:
+      case 43:
+      case 44:
+      case 45:
+      case 46:
+      case 47:
+      case 48:
+      case 49:
+      case 50:
+      case 51:
+      case 52:
+      case 53:
+      case 54:
+      case 55:
+      case 56:
+      case 57:
+      case 58:
+      case 59:
+      case 60:
+      case 61:
+      case 62:
+      case 63:
+      case 64:
+      case 65:
+      case 66:
+      case 67:
+      case 68:
+      case 69:
+      case 70:
+      case 71 :
+      case 72 :
+      case 73 :
+      case 74 :
+      case 75 :
+      case 76 :
+      case 77 :
+      case 78 :
+      case 79 :
+      case 80 :
+      case 81 :
+      case 82 :
+      case 83 :
+      case 84 :
+      case 85 :
+      case 86 :
+      case 87 :
+      case 88 :
+      case 89 :
+      case 90 :
+      case 92 :
+      case 93 :
+      case 94 :
+      case 95 :
+      case 96 :
+      case 97 :
+      case 98 :
+      case 99 :
+      case 100 :
+      case 101 :
+      case 102 :
+      case 103 :
+      case 104 :
+      case 105 :
+      case 106 :
+      case 107 :
+      case 108 :
+      case 109 :
+      case 110 :
+      case 111 :
+      case 112 :
+      case 113 :
+      case 114 :
+      case 115 :
+      case 116 :
+      case 117 :
+      case 118 :
+      case 119 :
+      case 120 :
+      case 121 :
+      case 122 :
+      case 123 :
+      case 124 :
+      case 125 :
+      case 126 :
+      case 127 :
+      case 128 :
+      case 129 :
+      case 130 :
+      case 131 :
+      case 132 :
+      case 133 :
+      case 134 :
+      case 135 :
+      case 136 :
+      case 137 :
+      case 138 :
+      case 139 :
+      case 140 :
+      case 141 :
+      case 142 :
+      case 143 :
+      case 144 :
+      case 145 :
+      case 146 :
+      case 147 :
+      case 148 :
+      case 149 :
+      case 150 :
         return getOneCloneG10();
     }
   }
@@ -431,12 +556,348 @@ class _GamePageState extends State<GamePage> {
     return false;
   }
   bool level14Cage(){
+    if(haveClone[97] == 0 && haveClone[112] == 0 && haveClone[113] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level15Cage(){
+    print(haveClone[111]);
+    print(haveClone[112]);
+    print(haveClone[113]);
     if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0){
       return true;
     }
     return false;
   }
-    bool checkWinOrNot(int level){
+  bool level16Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[97] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level17Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[97] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level18Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[97] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level19Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[97] == 0 && haveClone[96] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level20Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[97] == 0 && haveClone[98] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level21Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[97] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level22Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[97] == 0 && haveClone[96] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level23Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level24Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level25Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0  && haveClone[113] == 0 && haveClone[97] == 0 && haveClone[98] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level26Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0  && haveClone[113] == 0 && haveClone[114] == 0 && haveClone[97] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level27Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level28Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level29Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0  && haveClone[113] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level30Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0  && haveClone[113] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level31Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0  && haveClone[113] == 0 && haveClone[114] == 0 && haveClone[97] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level32Cage(){
+    if(haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level33Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level34Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level35Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level36Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level37Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[99] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level38Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level39Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  /// 2- 1/8
+
+  bool level40Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 ){
+      return true;
+    }
+    return false;
+  }
+  bool level41Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level42Cage(){
+    if(haveClone[109] == 0 && haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level43Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level44Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[81] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level45Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level46Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level47Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level48Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[81] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level49Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level50Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[83] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level51Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[81] == 0 && haveClone[82] == 0 && haveClone[83] == 0 ){
+      return true;
+    }
+    return false;
+  }
+  bool level52Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[83] == 0 ){
+      return true;
+    }
+    return false;
+  }
+  bool level53Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level54Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[81] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level55Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[95] == 0&& haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level56Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[83] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level57Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[81] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level58Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0  && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level59Cage(){
+    if(haveClone[109] == 0 && haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0  && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level60Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0  && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[81] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level61Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0  && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level62Cage(){
+    if(haveClone[109] == 0 && haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0  && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level63Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[115] == 0  && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[81] == 0 && haveClone[82] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level64Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[83] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level65Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0  && haveClone[81] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level66Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[83] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level67Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[81] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level68Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[95] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[99] == 0 && haveClone[82] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+  bool level69Cage(){
+    if(haveClone[110] == 0 && haveClone[111] == 0 && haveClone[112] == 0 && haveClone[113] == 0  && haveClone[114] == 0 && haveClone[96] == 0 && haveClone[97] == 0 && haveClone[98] == 0 && haveClone[81] == 0 && haveClone[82] == 0  && haveClone[83] == 0 && haveClone[67] == 0){
+      return true;
+    }
+    return false;
+  }
+
+  bool checkWinOrNot(int level){
       switch(level){
         case 1:
           return oneCage();
@@ -466,6 +927,116 @@ class _GamePageState extends State<GamePage> {
           return level13Cage();
         case 14:
           return level14Cage();
+        case 15:
+          return level15Cage();
+        case 16:
+          return level16Cage();
+        case 17:
+          return level17Cage();
+        case 18:
+          return level18Cage();
+        case 19:
+          return level19Cage();
+        case 20:
+          return level20Cage();
+        case 21:
+          return level21Cage();
+        case 22:
+          return level22Cage();
+        case 23:
+          return level23Cage();
+        case 24:
+          return level24Cage();
+        case 25:
+          return level25Cage();
+        case 26:
+          return level26Cage();
+        case 27:
+          return level27Cage();
+        case 28:
+          return level28Cage();
+        case 29:
+          return level29Cage();
+        case 30:
+          return level30Cage();
+        case 31:
+          return level31Cage();
+        case 32:
+          return level32Cage();
+        case 33:
+          return level33Cage();
+        case 34:
+          return level34Cage();
+        case 35:
+          return level35Cage();
+        case 36:
+          return level36Cage();
+        case 37:
+          return level37Cage();
+        case 38:
+          return level38Cage();
+        case 39:
+          return level39Cage();
+        case 40:
+          return level40Cage();
+        case 41:
+          return level41Cage();
+        case 42:
+          return level42Cage();
+        case 43:
+          return level43Cage();
+        case 44:
+          return level44Cage();
+        case 45:
+          return level45Cage();
+        case 46:
+          return level46Cage();
+        case 47:
+          return level47Cage();
+        case 48:
+          return level48Cage();
+        case 49:
+          return level49Cage();
+        case 50:
+          return level50Cage();
+        case 51:
+          return level51Cage();
+        case 52:
+          return level52Cage();
+        case 53:
+          return level53Cage();
+        case 54:
+          return level54Cage();
+        case 55:
+          return level55Cage();
+        case 56:
+          return level56Cage();
+        case 57:
+          return level57Cage();
+        case 58:
+          return level58Cage();
+        case 59:
+          return level59Cage();
+        case 60:
+          return level60Cage();
+        case 61:
+          return level61Cage();
+        case 62:
+          return level62Cage();
+        case 63:
+          return level63Cage();
+        case 64:
+          return level64Cage();
+        case 65:
+          return level65Cage();
+        case 66:
+          return level66Cage();
+        case 67:
+          return level67Cage();
+        case 68:
+          return level68Cage();
+        case 69:
+          return level69Cage();
         default:
           return oneCage();
       }

@@ -99,6 +99,11 @@ class SelectLevelScreenState extends State<SelectLevelScreen> {
                     Image.asset("assets/images/path2_new.png"),
                     Image.asset("assets/images/path2_new.png"),
                     Image.asset("assets/images/path2_new.png"),
+                    Image.asset("assets/images/path2_new.png"),
+                    Image.asset("assets/images/path2_new.png"),
+                    Image.asset("assets/images/path2_new.png"),
+                    Image.asset("assets/images/path2_new.png"),
+                    Image.asset("assets/images/path2_new.png"),
                   ],
                 ),
               ),
@@ -573,6 +578,481 @@ class SelectLevelScreenState extends State<SelectLevelScreen> {
                     levelNumber: 75,
                   )),
 
+              /// 6th
+
+
+              Positioned(
+                  bottom: 6670 + 80 /*height*0.085*/,
+                  left: width*0.51/*width*0.507*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 76,
+                  )),
+              Positioned(
+                  bottom: 6670 + 150/*height*0.175*/,
+                  left: width*0.3/*width*0.305*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 77,
+                  )),
+              Positioned(
+                  bottom: 6670 + 225/*height*0.252*/,
+                  left: width*0.546,
+                  child: const LevelCircleWidget(
+                    levelNumber: 78,
+                  )),
+              Positioned(
+                  bottom: 6670 + 280/*height*0.36*/,
+                  left: width*0.3/*0.38*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 79,
+                  )),
+              Positioned(
+                  bottom: 6670 + 350/*height*0.5*/,
+                  left: width*0.5,
+                  child: const LevelCircleWidget(
+                    levelNumber: 80,
+                  )),
+              Positioned(
+                  bottom: 6670 + 420/*height*0.625*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 81,
+                  )),
+              Positioned(
+                  bottom: 6670 + 510/*height*0.76*/,
+                  left: width*0.49,
+                  child: const LevelCircleWidget(
+                    levelNumber: 82,
+                  )),
+              Positioned(
+                  bottom: 6670 + 600/*height*0.87*/,
+                  left: width*0.3,
+                  child: const LevelCircleWidget(
+                    levelNumber: 83,
+                  )),
+
+              Positioned(
+                  bottom: 6670 + 680/*height*0.97*/,
+                  left: width*0.47,
+                  child: const LevelCircleWidget(
+                    levelNumber: 84,
+                  )),
+              Positioned(
+                  bottom: 6670 + 750/*height*1.05*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 85,
+                  )),
+              Positioned(
+                  bottom: 6670 + 850/*height*1.145*/,
+                  left: width*0.468,
+                  child: const LevelCircleWidget(
+                    levelNumber: 86,
+                  )),
+              Positioned(
+                  bottom: 6670 + 950/*height*1.25*/,
+                  left:width*0.32,
+                  child: const LevelCircleWidget(
+                    levelNumber: 87,
+                  )),
+              Positioned(
+                  bottom: 6670 + 1080/*height*1.4*/,
+                  left: width*0.25/*width*0.4*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 88,
+                  )),
+              Positioned(
+                  bottom: 6670 + 1150/*height*1.505*/,
+                  left: width*0.5/*width*0.3*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 89,
+                  )),
+              Positioned(
+                  bottom: 6670 + 1260/*height*1.572*/,
+                  left: width*0.46,
+                  child: const LevelCircleWidget(
+                    levelNumber: 90,
+                  )),
+
+              /// 7th
+
+
+              Positioned(
+                  bottom: 8000 + 80 /*height*0.085*/,
+                  left: width*0.51/*width*0.507*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 91,
+                  )),
+              Positioned(
+                  bottom: 8000 + 150/*height*0.175*/,
+                  left: width*0.3/*width*0.305*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 92,
+                  )),
+              Positioned(
+                  bottom: 8000 + 225/*height*0.252*/,
+                  left: width*0.546,
+                  child: const LevelCircleWidget(
+                    levelNumber: 93,
+                  )),
+              Positioned(
+                  bottom: 8000 + 280/*height*0.36*/,
+                  left: width*0.3/*0.38*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 94,
+                  )),
+              Positioned(
+                  bottom: 8000 + 350/*height*0.5*/,
+                  left: width*0.5,
+                  child: const LevelCircleWidget(
+                    levelNumber: 95,
+                  )),
+              Positioned(
+                  bottom: 8000 + 420/*height*0.625*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 96,
+                  )),
+              Positioned(
+                  bottom: 8000 + 510/*height*0.76*/,
+                  left: width*0.49,
+                  child: const LevelCircleWidget(
+                    levelNumber: 97,
+                  )),
+              Positioned(
+                  bottom: 8000 + 600/*height*0.87*/,
+                  left: width*0.3,
+                  child: const LevelCircleWidget(
+                    levelNumber: 98,
+                  )),
+
+              Positioned(
+                  bottom: 8000 + 680/*height*0.97*/,
+                  left: width*0.47,
+                  child: const LevelCircleWidget(
+                    levelNumber: 99,
+                  )),
+              Positioned(
+                  bottom: 8000 + 750/*height*1.05*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 100,
+                  )),
+              Positioned(
+                  bottom: 8000 + 850/*height*1.145*/,
+                  left: width*0.468,
+                  child: const LevelCircleWidget(
+                    levelNumber: 101,
+                  )),
+              Positioned(
+                  bottom: 8000 + 950/*height*1.25*/,
+                  left:width*0.32,
+                  child: const LevelCircleWidget(
+                    levelNumber: 102,
+                  )),
+              Positioned(
+                  bottom: 8000 + 1080/*height*1.4*/,
+                  left: width*0.25/*width*0.4*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 103,
+                  )),
+              Positioned(
+                  bottom: 8000 + 1150/*height*1.505*/,
+                  left: width*0.5/*width*0.3*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 104,
+                  )),
+              Positioned(
+                  bottom: 8000 + 1260/*height*1.572*/,
+                  left: width*0.46,
+                  child: const LevelCircleWidget(
+                    levelNumber: 105,
+                  )),
+
+              /// 8th
+
+
+              Positioned(
+                  bottom: 9330 + 80 /*height*0.085*/,
+                  left: width*0.51/*width*0.507*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 106,
+                  )),
+              Positioned(
+                  bottom: 9330 + 150/*height*0.175*/,
+                  left: width*0.3/*width*0.305*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 107,
+                  )),
+              Positioned(
+                  bottom: 9330 + 225/*height*0.252*/,
+                  left: width*0.546,
+                  child: const LevelCircleWidget(
+                    levelNumber: 108,
+                  )),
+              Positioned(
+                  bottom: 9330 + 280/*height*0.36*/,
+                  left: width*0.3/*0.38*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 109,
+                  )),
+              Positioned(
+                  bottom: 9330 + 350/*height*0.5*/,
+                  left: width*0.5,
+                  child: const LevelCircleWidget(
+                    levelNumber: 110,
+                  )),
+              Positioned(
+                  bottom: 9330 + 420/*height*0.625*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 111,
+                  )),
+              Positioned(
+                  bottom: 9330 + 510/*height*0.76*/,
+                  left: width*0.49,
+                  child: const LevelCircleWidget(
+                    levelNumber: 112,
+                  )),
+              Positioned(
+                  bottom: 9330 + 600/*height*0.87*/,
+                  left: width*0.3,
+                  child: const LevelCircleWidget(
+                    levelNumber: 113,
+                  )),
+
+              Positioned(
+                  bottom: 9330 + 680/*height*0.97*/,
+                  left: width*0.47,
+                  child: const LevelCircleWidget(
+                    levelNumber: 114,
+                  )),
+              Positioned(
+                  bottom: 9330 + 750/*height*1.05*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 115,
+                  )),
+              Positioned(
+                  bottom: 9330 + 850/*height*1.145*/,
+                  left: width*0.468,
+                  child: const LevelCircleWidget(
+                    levelNumber: 116,
+                  )),
+              Positioned(
+                  bottom: 9330 + 950/*height*1.25*/,
+                  left:width*0.32,
+                  child: const LevelCircleWidget(
+                    levelNumber: 117,
+                  )),
+              Positioned(
+                  bottom: 9330 + 1080/*height*1.4*/,
+                  left: width*0.25/*width*0.4*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 118,
+                  )),
+              Positioned(
+                  bottom: 9330 + 1150/*height*1.505*/,
+                  left: width*0.5/*width*0.3*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 119,
+                  )),
+              Positioned(
+                  bottom: 9330 + 1260/*height*1.572*/,
+                  left: width*0.46,
+                  child: const LevelCircleWidget(
+                    levelNumber: 120,
+                  )),
+
+              /// 9th
+
+
+              Positioned(
+                  bottom: 10670 + 80 /*height*0.085*/,
+                  left: width*0.51/*width*0.507*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 121,
+                  )),
+              Positioned(
+                  bottom: 10670 + 150/*height*0.175*/,
+                  left: width*0.3/*width*0.305*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 122,
+                  )),
+              Positioned(
+                  bottom: 10670 + 225/*height*0.252*/,
+                  left: width*0.546,
+                  child: const LevelCircleWidget(
+                    levelNumber: 123,
+                  )),
+              Positioned(
+                  bottom: 10670 + 280/*height*0.36*/,
+                  left: width*0.3/*0.38*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 124,
+                  )),
+              Positioned(
+                  bottom: 10670 + 350/*height*0.5*/,
+                  left: width*0.5,
+                  child: const LevelCircleWidget(
+                    levelNumber: 125,
+                  )),
+              Positioned(
+                  bottom: 10670 + 420/*height*0.625*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 126,
+                  )),
+              Positioned(
+                  bottom: 10670 + 510/*height*0.76*/,
+                  left: width*0.49,
+                  child: const LevelCircleWidget(
+                    levelNumber: 127,
+                  )),
+              Positioned(
+                  bottom: 10670 + 600/*height*0.87*/,
+                  left: width*0.3,
+                  child: const LevelCircleWidget(
+                    levelNumber: 128,
+                  )),
+
+              Positioned(
+                  bottom: 10670 + 680/*height*0.97*/,
+                  left: width*0.47,
+                  child: const LevelCircleWidget(
+                    levelNumber: 129,
+                  )),
+              Positioned(
+                  bottom: 10670 + 750/*height*1.05*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 130,
+                  )),
+              Positioned(
+                  bottom: 10670 + 850/*height*1.145*/,
+                  left: width*0.468,
+                  child: const LevelCircleWidget(
+                    levelNumber: 131,
+                  )),
+              Positioned(
+                  bottom: 10670 + 950/*height*1.25*/,
+                  left:width*0.32,
+                  child: const LevelCircleWidget(
+                    levelNumber: 132,
+                  )),
+              Positioned(
+                  bottom: 10670 + 1080/*height*1.4*/,
+                  left: width*0.25/*width*0.4*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 133,
+                  )),
+              Positioned(
+                  bottom: 10670 + 1150/*height*1.505*/,
+                  left: width*0.5/*width*0.3*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 134,
+                  )),
+              Positioned(
+                  bottom: 10670 + 1260/*height*1.572*/,
+                  left: width*0.46,
+                  child: const LevelCircleWidget(
+                    levelNumber: 135,
+                  )),
+
+              /// 10th
+
+
+              Positioned(
+                  bottom: 12010 + 80 /*height*0.085*/,
+                  left: width*0.51/*width*0.507*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 136,
+                  )),
+              Positioned(
+                  bottom: 12010 + 150/*height*0.175*/,
+                  left: width*0.3/*width*0.305*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 137,
+                  )),
+              Positioned(
+                  bottom: 12010 + 225/*height*0.252*/,
+                  left: width*0.546,
+                  child: const LevelCircleWidget(
+                    levelNumber: 138,
+                  )),
+              Positioned(
+                  bottom: 12010 + 280/*height*0.36*/,
+                  left: width*0.3/*0.38*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 139,
+                  )),
+              Positioned(
+                  bottom: 12010 + 350/*height*0.5*/,
+                  left: width*0.5,
+                  child: const LevelCircleWidget(
+                    levelNumber: 140,
+                  )),
+              Positioned(
+                  bottom: 12010 + 420/*height*0.625*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 141,
+                  )),
+              Positioned(
+                  bottom: 12010 + 510/*height*0.76*/,
+                  left: width*0.49,
+                  child: const LevelCircleWidget(
+                    levelNumber: 142,
+                  )),
+              Positioned(
+                  bottom: 12010 + 600/*height*0.87*/,
+                  left: width*0.3,
+                  child: const LevelCircleWidget(
+                    levelNumber: 143,
+                  )),
+
+              Positioned(
+                  bottom: 12010 + 680/*height*0.97*/,
+                  left: width*0.47,
+                  child: const LevelCircleWidget(
+                    levelNumber: 144,
+                  )),
+              Positioned(
+                  bottom: 12010 + 750/*height*1.05*/,
+                  left: width*0.27,
+                  child: const LevelCircleWidget(
+                    levelNumber: 145,
+                  )),
+              Positioned(
+                  bottom: 12010 + 850/*height*1.145*/,
+                  left: width*0.468,
+                  child: const LevelCircleWidget(
+                    levelNumber: 146,
+                  )),
+              Positioned(
+                  bottom: 12010 + 950/*height*1.25*/,
+                  left:width*0.32,
+                  child: const LevelCircleWidget(
+                    levelNumber: 147,
+                  )),
+              Positioned(
+                  bottom: 12010 + 1080/*height*1.4*/,
+                  left: width*0.25/*width*0.4*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 148,
+                  )),
+              Positioned(
+                  bottom: 12010 + 1150/*height*1.505*/,
+                  left: width*0.5/*width*0.3*/,
+                  child: const LevelCircleWidget(
+                    levelNumber: 149,
+                  )),
+              Positioned(
+                  bottom: 12010 + 1260/*height*1.572*/,
+                  left: width*0.46,
+                  child: const LevelCircleWidget(
+                    levelNumber: 150,
+                  )),
+
 
               /// grasses
 
@@ -593,19 +1073,9 @@ class SelectLevelScreenState extends State<SelectLevelScreen> {
                   left: width*0.6,
                   child: Image.asset("assets/images/stone.png", width: 250, height: 250,)),
               Positioned(
-                  bottom: height*2.83,
-                  left: width*0.5,
-                  child: Image.asset("assets/images/stone.png", width: 150, height: 150,)),
-
-              Positioned(
-                  bottom: height*5.75,
-                  left: width*0.47,
-                  child: Image.asset("assets/images/stone.png", width: 250, height: 250,)),
-              Positioned(
                   bottom: height*5.98,
                   right: width*0.47,
                   child: Image.asset("assets/images/stone.png", width: 150, height: 150,)),
-
               //72
               Positioned(
                   bottom: 6300,
@@ -628,13 +1098,13 @@ class SelectLevelScreenState extends State<SelectLevelScreen> {
                   child: Image.asset("assets/images/stone.png", width: 250, height: 250,)),
               //42
               Positioned(
-                  bottom: 3700,
+                  bottom: 3550,
                   left: width*0.47,
                   child: Image.asset("assets/images/stone.png", width: 150, height: 150,)),
               //38
               Positioned(
                   bottom: 3250,
-                  left: width*0.49,
+                  left: width*0.5,
                   child: Image.asset("assets/images/stone.png", width: 250, height: 250,)),
               //30
               Positioned(
