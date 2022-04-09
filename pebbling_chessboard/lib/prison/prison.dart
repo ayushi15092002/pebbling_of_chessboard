@@ -199,6 +199,8 @@ class Prison{
       case 89 :
         return levelprisons(720.0,89);
       case 90 :
+        return levelprisons(720.0,90);
+      case 91 :
         return levelprisons(720.0,91);
       case 92 :
         return levelprisons(720.0,92);
@@ -461,6 +463,76 @@ CustomPainter levelPainter(int level){
       return level68CagePainter();
     case 69:
       return level69CagePainter();
+    case 70:
+      return level70CagePainter();
+    case 71:
+      return level71CagePainter();
+    case 72:
+      return level72CagePainter();
+    case 73:
+      return level73CagePainter();
+    case 74:
+      return level74CagePainter();
+    case 75:
+      return level75CagePainter();
+    case 76:
+      return level76CagePainter();
+    case 77:
+      return level77CagePainter();
+    case 78:
+      return level78CagePainter();
+    case 79:
+      return level79CagePainter();
+    case 80:
+      return level80CagePainter();
+    case 81:
+      return level81CagePainter();
+    case 82:
+      return level82CagePainter();
+    case 83:
+      return level83CagePainter();
+    case 84:
+      return level84CagePainter();
+    case 85:
+      return level85CagePainter();
+    case 86:
+      return level86CagePainter();
+    case 87:
+      return level87CagePainter();
+    case 88:
+      return level88CagePainter();
+    case 89:
+      return level89CagePainter();
+    case 90:
+      return level90CagePainter();
+    case 91:
+      return level91CagePainter();
+    case 92:
+      return level92CagePainter();
+    case 93:
+      return level93CagePainter();
+    case 94:
+      return level94CagePainter();
+    case 95:
+      return level95CagePainter();
+    case 96:
+      return level96CagePainter();
+    case 97:
+      return level97CagePainter();
+    case 98:
+      return level98CagePainter();
+    case 99:
+      return level99CagePainter();
+    case 100:
+      return level100CagePainter();
+    case 101:
+      return level101CagePainter();
+    case 102:
+      return level102CagePainter();
+    case 103:
+      return level103CagePainter();
+    case 104:
+      return level104CagePainter();
       default:
         return level14CagePainter();
 
@@ -2145,7 +2217,7 @@ class level69CagePainter extends CustomPainter{
     path0.lineTo(size.width*0.1340000,size.height*0.7);
     path0.lineTo(size.width*0.1340000,size.height*0.9);
     path0.lineTo(size.width*0.1670000,size.height*0.9);
-    path0.lineTo(size.width*0.167000,size.height);
+    path0.lineTo(size.width*0.1670000,size.height);
     path0.close();
 
     canvas.drawPath(path0, paint0);
@@ -2157,8 +2229,1141 @@ class level69CagePainter extends CustomPainter{
   }
 
 }
+class level70CagePainter extends CustomPainter{
 
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
 
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level71CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level72CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level73CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level74CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.7);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.0670000,size.height*0.6);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.9);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.1670000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level75CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level76CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level77CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level78CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.7);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.0670000,size.height*0.6);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level79CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level80CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level81CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.7);
+
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level82CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level83CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level84CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level85CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level86CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level87CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level88CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level89CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level90CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level91CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level92CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level93CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level94CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0340000,size.height*0.7);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.0670000,size.height*0.6);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level95CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level96CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level97CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level98CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.9);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level99CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level100CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.8);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level101CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level102CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level103CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.7);
+    path0.lineTo(size.width*0.1000000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.6);
+    path0.lineTo(size.width*0.1340000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+class level104CagePainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint0 = Paint()
+      ..color = const Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+
+    Path path0 = Path();
+    path0.moveTo(0,size.height);
+    path0.lineTo(0,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.9);
+    path0.lineTo(size.width*0.0340000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.8);
+    path0.lineTo(size.width*0.0670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.7);
+    path0.lineTo(size.width*0.1670000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.8);
+    path0.lineTo(size.width*0.2000000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height*0.9);
+    path0.lineTo(size.width*0.2340000,size.height);
+    path0.close();
+
+    canvas.drawPath(path0, paint0);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
 
 
 class Prison3Painter extends CustomPainter{
@@ -2229,7 +3434,7 @@ class Prison6Painter extends CustomPainter{
       ..color = const Color.fromARGB(255, 33, 150, 243)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 4;
-    
+
     Path path0 = Path();
     path0.moveTo(size.width*0.0012625,size.height*0.6960200);
     path0.lineTo(size.width*0.0012625,size.height*0.9960200);
