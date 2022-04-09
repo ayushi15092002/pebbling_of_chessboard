@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:pebbling_chessboard/select_level_screen.dart';
 import 'package:pebbling_chessboard/widgets/ButtonWidget.dart';
 import 'package:pebbling_chessboard/widgets/TextWidget.dart';
 import 'package:pebbling_chessboard/widgets/background.dart';
 
-import 'choose_prison.dart';
-import 'game.dart';
-import 'main.dart';
 
 class MyHomePage extends StatefulWidget {
   @override

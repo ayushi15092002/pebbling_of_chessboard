@@ -31,7 +31,7 @@ class LevelCircleWidget extends StatelessWidget {
         child: CircleAvatar(
           backgroundColor: Color(0xff86B5EC),
           child: textWidget( levelNumber.toString(),  Colors.black, Colors.black,
-                width * 0.1, 1, "Rye"),
+              levelNumber>=100 ? width * 0.08 :width * 0.1, 1, "Rye"),
         ),
       ),
       onTap: (){
