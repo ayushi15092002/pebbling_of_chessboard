@@ -229,97 +229,563 @@ class Prison{
       case 104 :
         return levelprisons(720.0,104);
       case 105 :
-        return levelprisons(720.0,105);
-      case 106 :
-        return levelprisons(720.0,106);
+        return prison(48.0, 55.0, Color.fromARGB(255, 33, 150, 243));
+      case 106:
+        return levelprisons(720.0, 14);
       case 107 :
-        return levelprisons(720.0,107);
+        return prison(48.0, 80.0, Color.fromARGB(255, 33, 150, 243));
       case 108 :
-        return levelprisons(720.0,108);
+        return levelprisons(720.0,16);
       case 109 :
-        return levelprisons(720.0,109);
+        return levelprisons(720.0,17);
       case 110 :
-        return levelprisons(720.0,110);
+        return levelprisons(720.0,18);
       case 111 :
-        return levelprisons(720.0,111);
+        return levelprisons(720.0,19);
       case 112 :
-        return levelprisons(720.0,112);
+        return levelprisons(720.0,20);
       case 113 :
-        return levelprisons(720.0,113);
+        return levelprisons(720.0,21);
       case 114 :
-        return levelprisons(720.0,114);
+        return levelprisons(720.0,22);
       case 115 :
-        return levelprisons(720.0,115);
+        return prison(93.0, 77.0, Color.fromARGB(255, 33, 150, 243));
       case 116 :
-        return levelprisons(720.0,116);
+        return levelprisons(720.0,24);
       case 117 :
-        return levelprisons(720.0,117);
+        return levelprisons(720.0,25);
       case 118 :
-        return levelprisons(720.0,118);
+        return levelprisons(720.0,26);
       case 119 :
-        return levelprisons(720.0,119);
+        return levelprisons(720.0,27);
       case 120 :
-        return levelprisons(720.0,120);
+        return levelprisons(720.0,28);
       case 121 :
-        return levelprisons(720.0,121);
+        return levelprisons(720.0,29);
       case 122 :
-        return levelprisons(720.0,122);
+        return levelprisons(720.0,30);
       case 123 :
-        return levelprisons(720.0,123);
+        return levelprisons(720.0,31);
       case 124 :
-        return levelprisons(720.0,124);
+        return levelprisons(720.0,32);
       case 125 :
-        return levelprisons(720.0,125);
+        return levelprisons(720.0,33);
       case 126 :
-        return levelprisons(720.0,126);
+        return levelprisons(720.0,34);
       case 127 :
-        return levelprisons(720.0,127);
+        return levelprisons(720.0,35);
       case 128 :
-        return levelprisons(720.0,128);
+        return levelprisons(720.0,36);
       case 129 :
-        return levelprisons(720.0,129);
+        return levelprisons(720.0,37);
       case 130 :
-        return levelprisons(720.0,130);
+        return levelprisons(720.0,38);
       case 131 :
-        return levelprisons(720.0,131);
+        return levelprisons(720.0,39);
       case 132 :
-        return levelprisons(720.0,132);
+        return levelprisons(720.0,40);
       case 133 :
-        return levelprisons(720.0,133);
+        return levelprisons(720.0,41);
       case 134 :
-        return levelprisons(720.0,134);
+        return levelprisons(720.0,42);
       case 135 :
-        return levelprisons(720.0,135);
+        return levelprisons(720.0,43);
       case 136 :
-        return levelprisons(720.0,136);
+        return levelprisons(720.0,44);
       case 137 :
-        return levelprisons(720.0,137);
+        return levelprisons(720.0,45);
       case 138 :
-        return levelprisons(720.0,138);
+        return levelprisons(720.0,46);
       case 139 :
-        return levelprisons(720.0,139);
+        return levelprisons(720.0,47);
       case 140 :
-        return levelprisons(720.0,140);
+        return levelprisons(720.0,48);
       case 141 :
-        return levelprisons(720.0,141);
+        return levelprisons(720.0,49);
       case 142 :
-        return levelprisons(720.0,142);
+        return levelprisons(720.0,50);
       case 143 :
-        return levelprisons(720.0,143);
+        return levelprisons(720.0,51);
       case 144 :
-        return levelprisons(720.0,144);
+        return levelprisons(720.0,52);
       case 145 :
-        return levelprisons(720.0,145);
+        return levelprisons(720.0,53);
       case 146 :
-        return levelprisons(720.0,146);
+        return levelprisons(720.0,54);
       case 147 :
-        return levelprisons(720.0,147);
+        return levelprisons(720.0,55);
       case 148 :
-        return levelprisons(720.0,148);
+        return levelprisons(720.0,56);
       case 149 :
-        return levelprisons(720.0,149);
-      case 150 :
-        return levelprisons(720.0,150);
+        return levelprisons(720.0,57);
+      case 150:
+        return levelprisons(720.0,58);
+      case 151 :
+        return levelprisons(720.0,59);
+      case 152 :
+        return levelprisons(720.0,60);
+      case 153 :
+        return levelprisons(720.0,61);
+      case 154 :
+        return levelprisons(720.0,62);
+      case 155 :
+        return levelprisons(720.0,63);
+      case 156 :
+        return levelprisons(720.0,64);
+      case 157 :
+        return levelprisons(720.0,65);
+      case 158 :
+        return levelprisons(720.0,66);
+      case 159 :
+        return levelprisons(720.0,67);
+      case 160 :
+        return levelprisons(720.0,68);
+      case 161 :
+        return levelprisons(720.0,69);
+      case 162 :
+        return levelprisons(720.0,70);
+      case 163 :
+        return levelprisons(720.0,71);
+      case 164 :
+        return levelprisons(720.0,72);
+      case 165 :
+        return levelprisons(720.0,73);
+      case 166 :
+        return levelprisons(720.0,74);
+      case 167 :
+        return levelprisons(720.0,75);
+      case 168 :
+        return levelprisons(720.0,76);
+      case 169 :
+        return levelprisons(720.0,77);
+      case 170 :
+        return levelprisons(720.0,78);
+      case 171 :
+        return levelprisons(720.0,79);
+      case 172 :
+        return levelprisons(720.0,80);
+      case 173 :
+        return levelprisons(720.0,81);
+      case 174 :
+        return levelprisons(720.0,82);
+      case 175 :
+        return levelprisons(720.0,83);
+      case 176 :
+        return levelprisons(720.0,84);
+      case 177 :
+        return levelprisons(720.0,85);
+      case 178 :
+        return levelprisons(720.0,86);
+      case 179 :
+        return levelprisons(720.0,87);
+      case 180 :
+        return levelprisons(720.0,88);
+      case 181 :
+        return levelprisons(720.0,89);
+      case 182 :
+        return levelprisons(720.0,90);
+      case 183 :
+        return levelprisons(720.0,91);
+      case 184 :
+        return levelprisons(720.0,92);
+      case 185 :
+        return levelprisons(720.0,93);
+      case 186 :
+        return levelprisons(720.0,94);
+      case 187 :
+        return levelprisons(720.0,95);
+      case 188 :
+        return levelprisons(720.0,96);
+      case 189 :
+        return levelprisons(720.0,97);
+      case 190 :
+        return levelprisons(720.0,98);
+      case 191 :
+        return levelprisons(720.0,99);
+      case 192 :
+        return levelprisons(720.0,100);
+      case 193 :
+        return levelprisons(720.0,101);
+      case 194 :
+        return levelprisons(720.0,102);
+      case 195 :
+        return levelprisons(720.0,103);
+      case 196 :
+        return levelprisons(720.0,104);
+      case 197 :
+        return prison(94.0, 30.0, Color.fromARGB(255, 33, 150, 243));
+
+      case 198:
+        return levelprisons(720.0, 14);
+      case 199 :
+        return prison(48.0, 80.0, Color.fromARGB(255, 33, 150, 243));
+
+      case 200 :
+        return levelprisons(720.0,16);
+      case 201 :
+        return levelprisons(720.0,17);
+      case 202 :
+        return levelprisons(720.0,18);
+      case 203 :
+        return levelprisons(720.0,19);
+      case 204 :
+        return levelprisons(720.0,20);
+      case 205 :
+        return levelprisons(720.0,21);
+      case 206 :
+        return levelprisons(720.0,22);
+      case 207 :
+        return prison(93.0, 77.0, Color.fromARGB(255, 33, 150, 243));
+      case 208 :
+        return levelprisons(720.0,24);
+      case 209 :
+        return levelprisons(720.0,25);
+      case 210 :
+        return levelprisons(720.0,26);
+      case 211 :
+        return levelprisons(720.0,27);
+      case 212 :
+        return levelprisons(720.0,28);
+      case 213 :
+        return levelprisons(720.0,29);
+      case 214 :
+        return levelprisons(720.0,30);
+      case 215 :
+        return levelprisons(720.0,31);
+      case 216 :
+        return levelprisons(720.0,32);
+      case 217 :
+        return levelprisons(720.0,33);
+      case 218 :
+        return levelprisons(720.0,34);
+      case 219 :
+        return levelprisons(720.0,35);
+      case 220 :
+        return levelprisons(720.0,36);
+      case 221 :
+        return levelprisons(720.0,37);
+      case 222 :
+        return levelprisons(720.0,38);
+      case 223 :
+        return levelprisons(720.0,39);
+      case 224 :
+        return levelprisons(720.0,40);
+      case 225 :
+        return levelprisons(720.0,41);
+      case 226 :
+        return levelprisons(720.0,42);
+      case 227 :
+        return levelprisons(720.0,43);
+      case 228 :
+        return levelprisons(720.0,44);
+      case 229 :
+        return levelprisons(720.0,45);
+      case 230 :
+        return levelprisons(720.0,46);
+      case 231 :
+        return levelprisons(720.0,47);
+      case 232 :
+        return levelprisons(720.0,48);
+      case 233 :
+        return levelprisons(720.0,49);
+      case 234 :
+        return levelprisons(720.0,50);
+      case 235 :
+        return levelprisons(720.0,51);
+      case 236 :
+        return levelprisons(720.0,52);
+      case 237 :
+        return levelprisons(720.0,53);
+      case 238 :
+        return levelprisons(720.0,54);
+      case 239 :
+        return levelprisons(720.0,55);
+      case 240 :
+        return levelprisons(720.0,56);
+      case 241 :
+        return levelprisons(720.0,57);
+      case 242 :
+        return levelprisons(720.0,58);
+      case 243 :
+        return levelprisons(720.0,59);
+      case 244 :
+        return levelprisons(720.0,60);
+      case 245 :
+        return levelprisons(720.0,61);
+      case 246 :
+        return levelprisons(720.0,62);
+      case 247 :
+        return levelprisons(720.0,63);
+      case 248 :
+        return levelprisons(720.0,64);
+      case 249 :
+        return levelprisons(720.0,65);
+      case 250 :
+        return levelprisons(720.0,66);
+      case 251 :
+        return levelprisons(720.0,67);
+      case 252 :
+        return levelprisons(720.0,68);
+      case 253 :
+        return levelprisons(720.0,69);
+      case 254 :
+        return levelprisons(720.0,70);
+      case 255 :
+        return levelprisons(720.0,71);
+      case 256 :
+        return levelprisons(720.0,72);
+      case 257 :
+        return levelprisons(720.0,73);
+      case 258 :
+        return levelprisons(720.0,74);
+      case 259 :
+        return levelprisons(720.0,75);
+      case 260 :
+        return levelprisons(720.0,76);
+      case 261 :
+        return levelprisons(720.0,77);
+      case 262 :
+        return levelprisons(720.0,78);
+      case 263 :
+        return levelprisons(720.0,79);
+      case 264 :
+        return levelprisons(720.0,80);
+      case 265 :
+        return levelprisons(720.0,81);
+      case 266 :
+        return levelprisons(720.0,82);
+      case 267 :
+        return levelprisons(720.0,83);
+      case 268 :
+        return levelprisons(720.0,84);
+      case 269 :
+        return levelprisons(720.0,85);
+      case 270 :
+        return levelprisons(720.0,86);
+      case 271 :
+        return levelprisons(720.0,87);
+      case 272 :
+        return levelprisons(720.0,88);
+      case 273 :
+        return levelprisons(720.0,89);
+      case 274 :
+        return levelprisons(720.0,90);
+      case 275 :
+        return levelprisons(720.0,91);
+      case 276 :
+        return levelprisons(720.0,92);
+      case 277 :
+        return levelprisons(720.0,93);
+      case 278 :
+        return levelprisons(720.0,94);
+      case 279 :
+        return levelprisons(720.0,95);
+      case 280 :
+        return levelprisons(720.0,96);
+      case 281 :
+        return levelprisons(720.0,97);
+      case 282 :
+        return levelprisons(720.0,98);
+      case 283 :
+        return levelprisons(720.0,99);
+      case 284 :
+        return levelprisons(720.0,100);
+      case 285 :
+        return levelprisons(720.0,101);
+      case 286 :
+        return levelprisons(720.0,102);
+      case 287 :
+        return levelprisons(720.0,103);
+      case 288 :
+        return levelprisons(720.0,104);
+      case 289 :
+        return levelprisons(720.0,16);
+      case 290 :
+        return levelprisons(720.0,17);
+      case 291 :
+        return levelprisons(720.0,18);
+      case 292 :
+        return levelprisons(720.0,19);
+      case 293 :
+        return levelprisons(720.0,20);
+      case 294 :
+        return levelprisons(720.0,21);
+      case 295 :
+        return levelprisons(720.0,22);
+      case 296 :
+        return prison(93.0, 77.0, Color.fromARGB(255, 33, 150, 243));
+      case 297 :
+        return levelprisons(720.0,24);
+      case 298 :
+        return levelprisons(720.0,25);
+      case 299 :
+        return levelprisons(720.0,26);
+      case 300 :
+        return levelprisons(720.0,27);
+      case 301 :
+        return levelprisons(720.0,28);
+      case 302 :
+        return levelprisons(720.0,29);
+      case 303 :
+        return levelprisons(720.0,30);
+      case 304 :
+        return levelprisons(720.0,31);
+      case 305 :
+        return levelprisons(720.0,32);
+      case 306 :
+        return levelprisons(720.0,33);
+      case 307 :
+        return levelprisons(720.0,34);
+      case 308 :
+        return levelprisons(720.0,35);
+      case 309 :
+        return levelprisons(720.0,36);
+      case 310 :
+        return levelprisons(720.0,37);
+      case 311 :
+        return levelprisons(720.0,38);
+      case 312 :
+        return levelprisons(720.0,39);
+      case 313 :
+        return levelprisons(720.0,40);
+      case 314 :
+        return levelprisons(720.0,41);
+      case 315 :
+        return levelprisons(720.0,42);
+      case 316 :
+        return levelprisons(720.0,43);
+      case 317 :
+        return levelprisons(720.0,44);
+      case 318 :
+        return levelprisons(720.0,45);
+      case 319 :
+        return levelprisons(720.0,46);
+      case 320 :
+        return levelprisons(720.0,47);
+      case 321 :
+        return levelprisons(720.0,48);
+      case 322 :
+        return levelprisons(720.0,49);
+      case 323 :
+        return levelprisons(720.0,50);
+      case 324 :
+        return levelprisons(720.0,51);
+      case 325 :
+        return levelprisons(720.0,16);
+      case 326 :
+        return levelprisons(720.0,17);
+      case 327 :
+        return levelprisons(720.0,18);
+      case 328 :
+        return levelprisons(720.0,19);
+      case 329 :
+        return levelprisons(720.0,20);
+      case 330 :
+        return levelprisons(720.0,21);
+      case 331 :
+        return levelprisons(720.0,22);
+      case 332 :
+        return prison(93.0, 77.0, Color.fromARGB(255, 33, 150, 243));
+      case 333 :
+        return levelprisons(720.0,24);
+      case 334 :
+        return levelprisons(720.0,25);
+      case 335 :
+        return levelprisons(720.0,26);
+      case 336 :
+        return levelprisons(720.0,27);
+      case 337 :
+        return levelprisons(720.0,28);
+      case 338 :
+        return levelprisons(720.0,29);
+      case 339 :
+        return levelprisons(720.0,30);
+      case 340 :
+        return levelprisons(720.0,31);
+      case 341 :
+        return levelprisons(720.0,32);
+      case 342 :
+        return levelprisons(720.0,33);
+      case 343 :
+        return levelprisons(720.0,34);
+      case 344 :
+        return levelprisons(720.0,35);
+      case 345 :
+        return levelprisons(720.0,36);
+      case 346 :
+        return levelprisons(720.0,37);
+      case 347 :
+        return levelprisons(720.0,38);
+      case 348 :
+        return levelprisons(720.0,39);
+      case 349 :
+        return levelprisons(720.0,40);
+      case 350 :
+        return levelprisons(720.0,41);
+      case 351 :
+        return levelprisons(720.0,42);
+      case 352 :
+        return levelprisons(720.0,43);
+      case 353 :
+        return levelprisons(720.0,44);
+      case 354 :
+        return levelprisons(720.0,45);
+      case 355 :
+        return levelprisons(720.0,46);
+      case 356 :
+        return levelprisons(720.0,47);
+      case 357 :
+        return levelprisons(720.0,48);
+      case 358 :
+        return levelprisons(720.0,49);
+      case 359 :
+        return levelprisons(720.0,50);
+      case 360 :
+        return levelprisons(720.0,51);
+      case 361 :
+        return levelprisons(720.0,16);
+      case 362 :
+        return levelprisons(720.0,17);
+      case 363 :
+        return levelprisons(720.0,18);
+      case 364 :
+        return levelprisons(720.0,19);
+      case 365 :
+        return levelprisons(720.0,20);
+      case 366 :
+        return levelprisons(720.0,21);
+      case 367 :
+        return levelprisons(720.0,22);
+      case 368 :
+        return prison(93.0, 77.0, Color.fromARGB(255, 33, 150, 243));
+      case 369 :
+        return levelprisons(720.0,24);
+      case 370 :
+        return levelprisons(720.0,25);
+      case 371 :
+        return levelprisons(720.0,26);
+      case 372 :
+        return levelprisons(720.0,27);
+      case 373 :
+        return levelprisons(720.0,28);
+      case 374 :
+        return levelprisons(720.0,29);
+      case 375 :
+        return levelprisons(720.0,30);
+      case 376 :
+        return levelprisons(720.0,31);
+      case 377 :
+        return levelprisons(720.0,32);
+      case 378 :
+        return levelprisons(720.0,33);
+      case 379 :
+        return levelprisons(720.0,34);
+      case 380 :
+        return levelprisons(720.0,17);
+      case 381 :
+        return levelprisons(720.0,18);
+      case 382 :
+        return levelprisons(720.0,19);
 
     }
     return prison(50.0, 50.0, Color.fromARGB(255, 33, 150, 243));
@@ -533,6 +999,7 @@ CustomPainter levelPainter(int level){
       return level103CagePainter();
     case 104:
       return level104CagePainter();
+
       default:
         return level14CagePainter();
 

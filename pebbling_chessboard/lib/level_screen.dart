@@ -70,7 +70,7 @@ class LevelScreenState extends State<LevelScreen> {
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height*0.17,
-                left: MediaQuery.of(context).size.width/2 -MediaQuery.of(context).size.width*0.42 /*MediaQuery.of(context).size.width*0.15*/,
+                left: MediaQuery.of(context).size.width/2 -MediaQuery.of(context).size.width*0.46 /*MediaQuery.of(context).size.width*0.15*/,
                 child: Column(
                   children: [
                     SizedBox(
